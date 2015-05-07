@@ -366,7 +366,7 @@ class LiveServerTestCase(unittest.TestCase):
         self._process.start()
 
         # we must wait the server start listening
-        time.sleep(1)
+        time.sleep(10)
 
     def _terminate_live_server(self):
         if self._process:
